@@ -25,8 +25,8 @@ password.send_keys(PASSWORD)
 sign_in = driver.find_element_by_css_selector(".login__form_action_container button")
 sign_in.click()
 
-# Add if Linkedin asks you to make sure you're not a bot
-time.sleep(30)
+# Add if Linkedin asks you to make sure you're not a bot so you have time to complete the Captcha
+# time.sleep(30)
 
 # Searches for the job of your choosing
 search_box = driver.find_element_by_css_selector("#ember47 input")
